@@ -510,10 +510,10 @@ p { margin-bottom: 14px; color: var(--text); font-size: 16px; line-height: 1.75;
 @media (max-width: 480px) {
   .hero h1, .h1-split { font-size: 28px; }
   .section-title { font-size: 24px; }
-  .hero-facts { grid-template-columns: 1fr; padding: 14px 18px; gap: 10px; }
+  .hero-facts { grid-template-columns: 1fr 1fr; padding: 14px 18px; gap: 10px; }
   .hero { padding-bottom: 320px; }
   .hero-dots { bottom: 280px; }
-  .facts { grid-template-columns: 1fr; }
+  .facts { grid-template-columns: 1fr 1fr; }
   .partners-grid { grid-template-columns: repeat(2, 1fr); }
   .onas-visual { height: 300px; }
 }
