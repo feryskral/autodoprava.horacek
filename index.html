@@ -634,9 +634,15 @@ function setLang(lang) {
   // Switch active (both desktop + mobile lang switches)
   document.querySelectorAll('.lang-switch button').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
   localStorage.setItem('lang', lang);
-  // Re-trigger H1 split animation
+  // Keep H1 visible after language change (skip fade-in replay)
   const h1 = document.querySelector('.h1-split');
-  if (h1) { h1.style.animation = 'none'; void h1.offsetWidth; h1.style.animation = ''; }
+  if (h1) {
+    h1.querySelectorAll('span').forEach(s => {
+      s.style.opacity = '1';
+      s.style.transform = 'none';
+      s.style.animation = 'none';
+    });
+  }
 }
 
 document.querySelectorAll('.lang-switch').forEach(sw => sw.addEventListener('click', (e) => {
