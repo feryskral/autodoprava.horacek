@@ -361,6 +361,7 @@ p { margin-bottom: 14px; color: var(--text); font-size: 16px; line-height: 1.75;
   .container { padding: 0 28px; }
   .section { padding: 80px 0; }
   .section-title { font-size: 38px; }
+  .hero { align-items: flex-end; min-height: 100vh; padding-bottom: 200px; }
   .hero h1, .h1-split { font-size: 48px; }
   .hero-sub { font-size: 17px; }
   .two-col, .contact-grid { grid-template-columns: 1fr; gap: 50px; }
@@ -389,7 +390,7 @@ p { margin-bottom: 14px; color: var(--text); font-size: 16px; line-height: 1.75;
   .center-text { font-size: 15px; margin-bottom: 40px; }
 
   /* HERO */
-  .hero { min-height: auto; padding: 100px 0 300px; }
+  .hero { min-height: 100vh; align-items: flex-end; padding: 100px 0 320px; }
   .hero h1, .h1-split { font-size: 30px; letter-spacing: -.8px; line-height: 1.1; overflow-wrap: break-word; word-break: break-word; }
   .h1-split > span { margin-right: .15em; }
   .hero-sub { font-size: 15px; margin-bottom: 26px; }
